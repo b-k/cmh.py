@@ -1,4 +1,4 @@
-Cochrane-Mantel-Haenszel statistic calcualator
+Cochrane-Mantel-Haenszel statistic calculator
 =======
 
 This repository supplements "An Analysis of U.S. Domestic Migration via Subset-stable Measures of Administrative Data" [ doi://10.2139/ssrn.3197362 ].
@@ -21,8 +21,8 @@ The package operates on Pandas data frames. There should be column names, but ro
 are ignored.
 
 The CMH operates only on categorical values. Binning into categories is often preferred
-over regression on continuous variables because there is no assumption of a linear (or
-other monotonic) relation between dependent and independent variables.
+over regression on continuous variables because there is no assumption of a linear or
+other monotonic relation between dependent and independent variables.
 
 The dependent and independent variables can be converted to binary variables using an
 arbitrary function, allowing for alternate strategies such as selection of a single
@@ -38,17 +38,8 @@ dependent and independent variable.
 ```
 from cmh import cmh
 
-
 data = a_pandas_data_frame
-
 aggregate_risk_ratio = cmh(data, "dependent", "independent")
 ```
 
 Try `help(cmh)` for more options.
-
-
-License
-====
-This was written by a U.S. government employee in the course of his duties, so US copyright (§18 USC) does not apply.
-
-As a courtesy, please cite http://dx.doi.org/10.2139/ssrn.3197362 in works using this package.
