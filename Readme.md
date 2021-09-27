@@ -5,7 +5,7 @@ This repository supplements "An Analysis of U.S. Domestic Migration via Subset-s
 
 The paper suggested the use of the Cochran-Mantel-Haenszel (CMH) statistic for reporting
 all-else-equal measures of the effect of one variable on another:
-if we raise the value of an independent variable but hold all other variables constant,
+if we change the value of an independent variable from zero to one but hold all other variables constant,
 with what likelihood will the dependent variable change?
 
 This repository includes a single Python file with one external function, `cmh`, to get a
